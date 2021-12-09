@@ -3,9 +3,12 @@ GLOBAL
 estilos globales, aca ira los selectores de 
 etiquetas globales
 */
+
 body {
     font-size: 16px;
-    font-family: arial;    
+    font-family: arial;   
+    margin: auto;
+    width: 1440px; 
   }
   
   h2 {
@@ -49,10 +52,11 @@ body {
 }
 .main .list-figures{    
     display: flex; 
+    box-sizing: border-box;       
 }
 .main .list-figures li{    
     padding: 20px;
-    width: 385px;
+    width: 382px;
     height: 182px;
     left: 868px;
     top: 330px;
@@ -76,7 +80,8 @@ body {
     
 }
 .main p{
-    padding: 16px;
+    width: 100%;
+    padding: 20px;
     text-align: justify;
 }
 
@@ -146,7 +151,8 @@ body {
     height: 214px;    
     margin-top: 20px;         
     margin-left: 20px;
-    margin-right: 20px;  
+    margin-right: 20px; 
+    color: black; 
 }
 .main .btnenviar{
     width: 195px;
