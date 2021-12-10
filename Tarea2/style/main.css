@@ -91,7 +91,9 @@ body {
   /*
   HOME
   aca iran estilos de la seccion home*/  
-
+.main .home ul{
+  margin-left: 28px;
+}
   /*
   SERVICIOS
   aca iran estilos de la seccion servicios*/
