@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.wrapper header {
+    background: blue;
+}
+
+.wrapper main {
+    flex-grow: 1;
+}
+
+footer {
+    background: red;
+}
