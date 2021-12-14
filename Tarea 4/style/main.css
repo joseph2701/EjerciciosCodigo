@@ -302,6 +302,210 @@
     color: white; 
 }
 
+.wrapper main .blog{
+    background: yellow;
+    padding-top: 2.5%;            
+    padding-bottom: 2%;      
+}
+
+.wrapper main .blog >div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;      
+}
+
+
+.wrapper main .blog >h2{
+    font-family:"poppins";
+    font-size: 28px;
+    color: #0098EF;
+    padding-bottom: 2%;    
+    width: 100%;
+}
+
+.wrapper main .blog .space_1{
+    width: 33%;
+    background-color: red;
+    padding-right: 2%;  
+    height: 100%;    
+}
+
+.wrapper main .blog .space_1 figure{
+ padding-bottom: 5%;
+}
+.wrapper main .blog .space_1 h2{
+    border-left: #5A0CB0 5px solid;
+    padding-top: 5%;
+    font-family:"poppins";
+    font-size: 28px;       
+}
+
+.wrapper main .blog .space_1 >p{
+    font-family: "Raleway";
+    font-size: 13px;
+    line-height: 26px;
+    width: 100%;
+    padding-top: 5%;                
+    
+}
+
+.wrapper main .blog .space_1 p p{
+    display: block;  
+
+    margin-top: -20px;    
+}
+
+.wrapper main .blog .space_2{
+    width: 34.65%;
+    background-color: green;
+    padding-right: 1px;
+    display: flex;    
+    flex-wrap: wrap;
+    height: 50%;
+    justify-content: center;
+}
+
+.wrapper main .blog .space_2 .description_b{
+    width: 42%;
+}
+.wrapper main .blog .space_2 .description_b h3{
+    font-size: 12px;
+    font-family: Poppins;
+    border-left:solid gray 4px;
+    padding: 2% 2%;                
+}
+
+.wrapper main .blog .space_2 .description_b >p {    
+    padding-top: 2.5%;    
+    font-family: "Raleway";
+    font-size: 10px;
+    font-weight: normal;    
+    line-height: 20px; 
+}
+
+.wrapper main .blog .space_2 .description_b p >p{        
+    padding-bottom: 20%;    
+}
+
+.wrapper main .blog .space_2 .description_b figure {    
+    height: 100%;
+}
+
+.wrapper main .blog .space_3{
+    width: 32.35%;
+    background-color: orange;
+    height: 50%;    
+}
+
+.wrapper main .blog .space_3 .description_b{
+    width: 100%;
+}
+.wrapper main .blog .space_3 .description_b h3{
+    font-size: 12px;
+    font-family: Poppins;
+    border-left:solid gray 4px;
+    padding: 2% 2%;                
+}
+
+.wrapper main .blog .space_3 .description_b >p {    
+    padding-top: 2.5%;    
+    font-family: "Raleway";
+    font-size: 11px;
+    font-weight: normal;    
+    line-height: 20px; 
+    padding-right: 5px;    
+}
+
+.wrapper main .blog .space_3 .description_b p >p{        
+    padding-bottom: 20%;        
+}
+
+
+
+
+.wrapper main .blog .space_4{
+    width: 34.65%;
+    background-color: green;
+    padding-right: 1px;
+    display: flex;    
+    flex-wrap: wrap;
+    height: 50%;
+    justify-content: center;
+}
+
+.wrapper main .blog .space_4 .description_b{
+    width: 42%;
+    padding-left: 5%;
+}
+.wrapper main .blog .space_4 .description_b h3{
+    font-size: 12px;
+    font-family: Poppins;
+    border-left:solid gray 4px;
+    padding: 2% 2%;                
+}
+
+.wrapper main .blog .space_4 .description_b figure {    
+    justify-self: left;    
+}
+
+.wrapper main .blog .space_4 .description_b >p {    
+    padding-top: 2.5%;    
+    font-family: "Raleway";
+    font-size: 10px;
+    font-weight: normal;    
+    line-height: 20px; 
+}
+
+.wrapper main .blog .space_4 .description_b p >p{        
+    padding-bottom: 20%;    
+}
+
+
+.wrapper main .blog .space_5{
+    width: 32.35%;
+    background-color: orange;
+    height: 50%;    
+}
+
+.wrapper main .blog .space_5 >p {    
+    padding-top: 4.5%;    
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: normal;    
+    line-height: 27px; 
+    padding-right: 5px;    
+}
+
+.wrapper main .blog .space_5 div {        
+    display:flex;
+    padding-top: 5%;
+    width: 100%;
+}
+
+.wrapper main .blog .space_5 div input{            
+    width: 50%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: #C0C0C0 solid 1px;
+}
+
+.wrapper main .blog .space_5  div >p{        
+    padding-top: 5%;        
+    padding-bottom: 5%;     
+    width: 50%;
+    background: #6D0AD3;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+    color: white;
+    font-family: "raleway";
+}
+
+
+
+
+
+
 
 
 
