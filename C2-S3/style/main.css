@@ -19,9 +19,6 @@
     align-items: center;    
 }
 
-.wrapper a{
-    color: blueviolet;
-}
 .wrapper .logo{
     display: flex;
     flex-direction: row;
@@ -251,7 +248,7 @@
     padding-top: 2.5%;    
     display: flex;
     flex-direction: column;     
-    padding-bottom: 2.5%;  
+    padding-bottom: 2%;  
     justify-content: center;      
 }
 
@@ -305,17 +302,16 @@
     color: white; 
 }
 
-.wrapper main .blog{    
-    display: flex;  
-    flex-direction: column;          
+.wrapper main .blog{
     background: yellow;
     padding-top: 2.5%;            
-    padding-bottom: 2.5%;            
+    padding-bottom: 2%;      
 }
-.wrapper main .blog >div{
-    background: black;    
-    display: flex;  
-    flex-wrap: wrap;          
+
+.wrapper main .blog >div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;      
 }
 
 
@@ -323,18 +319,23 @@
     font-family:"poppins";
     font-size: 28px;
     color: #0098EF;
-    padding-bottom: 2%;                 
+    padding-bottom: 2%;    
+    width: 100%;
 }
 
 .wrapper main .blog .space_1{
     width: 33%;
     background-color: red;
+    padding-right: 2%;  
+    height: 100%;    
 }
 
+.wrapper main .blog .space_1 figure{
+ padding-bottom: 5%;
+}
 .wrapper main .blog .space_1 h2{
     border-left: #5A0CB0 5px solid;
     padding-top: 5%;
-    padding-bottom: 5%;
     font-family:"poppins";
     font-size: 28px;       
 }
@@ -342,68 +343,71 @@
 .wrapper main .blog .space_1 >p{
     font-family: "Raleway";
     font-size: 13px;
-    line-height: 26px;    
-}
-
-.wrapper main .blog .panel_b{
-    background: black;   
-    width: 67%;
-    display: flex;
-    flex-wrap: wrap;
-    width: 67%;  
-    padding-left: 1%;  
-}
-
-.wrapper main .blog .panel_b .space_2{
-    width: 50%;
-    background-color: green;    
-    display: flex;
-    flex-wrap: wrap;
-    height: 50%;
+    line-height: 26px;
+    width: 100%;
+    padding-top: 5%;                
     
 }
 
-.wrapper main .blog .panel_b .space_2 .description_b{
-    width: 50%;
+.wrapper main .blog .space_1 p p{
+    display: block;  
+
+    margin-top: -20px;    
 }
-.wrapper main .blog .panel_b .space_2 .description_b h3{
+
+.wrapper main .blog .space_2{
+    width: 34.65%;
+    background-color: green;
+    padding-right: 1px;
+    display: flex;    
+    flex-wrap: wrap;
+    height: 50%;
+    justify-content: center;
+}
+
+.wrapper main .blog .space_2 .description_b{
+    width: 42%;
+}
+.wrapper main .blog .space_2 .description_b h3{
     font-size: 12px;
     font-family: Poppins;
     border-left:solid gray 4px;
     padding: 2% 2%;                
 }
 
-.wrapper main .blog .panel_b .space_2 .description_b >p {    
+.wrapper main .blog .space_2 .description_b >p {    
     padding-top: 2.5%;    
     font-family: "Raleway";
-    font-size: 11px;
+    font-size: 10px;
     font-weight: normal;    
     line-height: 20px; 
 }
 
-.wrapper main .blog .panel_b  .space_2 .description_b figure {    
+.wrapper main .blog .space_2 .description_b p >p{        
+    padding-bottom: 20%;    
+}
+
+.wrapper main .blog .space_2 .description_b figure {    
     height: 100%;
-    width: 50%;
 }
 
-.wrapper main .blog .panel_b  .space_3{
-    width: 50%;
+.wrapper main .blog .space_3{
+    width: 32.35%;
     background-color: orange;
-    height: 50%; 
-    padding-left: 1%;   
+    height: 50%;    
 }
 
-.wrapper main .blog .panel_b  .space_3 .description_b{
+.wrapper main .blog .space_3 .description_b{
     width: 100%;
 }
-.wrapper main .blog .panel_b  .space_3 .description_b h3{
+.wrapper main .blog .space_3 .description_b h3{
     font-size: 12px;
     font-family: Poppins;
     border-left:solid gray 4px;
     padding: 2% 2%;                
 }
 
-.wrapper main .blog .panel_b  .space_3 .description_b >p {    
+.wrapper main .blog .space_3 .description_b >p {    
     padding-top: 2.5%;    
     font-family: "Raleway";
     font-size: 11px;
@@ -412,40 +416,39 @@
     padding-right: 5px;    
 }
 
-.wrapper main .blog .panel_b  .space_3 figure{        
-    padding-top: 2.5%;      
+.wrapper main .blog .space_3 .description_b p >p{        
+    padding-bottom: 20%;        
 }
 
 
-.wrapper main .blog .panel_b  .space_4{
-    width: 50%;
-    background-color: green;    
+
+
+.wrapper main .blog .space_4{
+    width: 34.65%;
+    background-color: green;
+    padding-right: 1px;
     display: flex;    
     flex-wrap: wrap;
-    height: 50%;    
-    padding-top: 1%;    
+    height: 50%;
+    justify-content: center;
 }
 
-.wrapper main .blog .panel_b  .space_4 >div{
-    
-}
-
-.wrapper main .blog .panel_b  .space_4 figure {    
-    justify-self: left;
-    width: 50%;      
-}
-.wrapper main .blog .panel_b  .space_4 .description_b{
-    width: 50%;
+.wrapper main .blog .space_4 .description_b{
+    width: 42%;
     padding-left: 5%;
 }
-.wrapper main .blog .panel_b  .space_4 .description_b h3{
-    font-size: 11px;
+.wrapper main .blog .space_4 .description_b h3{
+    font-size: 12px;
     font-family: Poppins;
     border-left:solid gray 4px;
     padding: 2% 2%;                
 }
 
-.wrapper main .blog .panel_b  .space_4 .description_b >p {    
+.wrapper main .blog .space_4 .description_b figure {    
+    justify-self: left;    
+}
+
+.wrapper main .blog .space_4 .description_b >p {    
     padding-top: 2.5%;    
     font-family: "Raleway";
     font-size: 10px;
@@ -453,14 +456,18 @@
     line-height: 20px; 
 }
 
-.wrapper main .blog .panel_b  .space_5{
-    width: 50%;
-    background-color: orange;
-    height: 50%; 
-    padding-left: 1%;      
+.wrapper main .blog .space_4 .description_b p >p{        
+    padding-bottom: 20%;    
 }
 
-.wrapper main .blog .panel_b  .space_5 >p {    
+
+.wrapper main .blog .space_5{
+    width: 32.35%;
+    background-color: orange;
+    height: 50%;    
+}
+
+.wrapper main .blog .space_5 >p {    
     padding-top: 4.5%;    
     font-family: "Raleway";
     font-size: 18px;
@@ -469,13 +476,13 @@
     padding-right: 5px;    
 }
 
-.wrapper main .blog .panel_b  .space_5 div {        
+.wrapper main .blog .space_5 div {        
     display:flex;
     padding-top: 5%;
     width: 100%;
 }
 
-.wrapper main .blog .panel_b  .space_5 div input{            
+.wrapper main .blog .space_5 div input{            
     width: 50%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -494,108 +501,29 @@
     font-family: "raleway";
 }
 
-.wrapper main .contact{    
- background: violet;
- padding-top: 2.5%;            
- padding-bottom: 2.5%;            
-
-}
-
-.wrapper main .contact >div{        
-    display: flex;  
-    flex-wrap: wrap;       
-    justify-content: center;   
-    align-items: center;
-}
-
-.wrapper main .contact h2 {
-    padding: 2%;
-    width: 100%;
-    color: #0098EF;
-}
 
 
 
-.wrapper main .contact input {
-    width: 40%;
-    padding: 2%;
-    border-radius: 8px;
-    margin-left: 2%;
-    margin-bottom: 2%;
-    border: 1px solid #6D0AD3;
-}
 
-.wrapper main .contact select {
-    width: 40%;
-    padding: 2%;
-    border-radius: 8px;
-    margin-left: 2%;
-    border: 1px solid #C0C0C0;
-    margin-bottom: 2%;
-}
 
-.wrapper main .contact textarea {
-    width: 82.5%;
-    padding: 2%;
-    border-radius: 8px;
-    margin-left: 2%;
-}
 
-.wrapper main .contact button {    
-    width: 144px;        
-    background: #6D0AD3;
-    border-radius: 8px;
-    height: 57px;
-}
 
-.wrapper main .contact div >div{
-    width: 100%;
-    padding-top: 5%;
-    display: flex;        
-    justify-content: center;
-}
-.wrapper main .contact div div button{
-    color: white;
-}
 
-.footer {
+
+
+
+/* 
+.wrapper main .services div .layouts_s p{    
+    position: absolute;
+} */
+
+
+
+
+
+
+
+
+footer {
     background: red;
-    height: 100%;
-    display: flex;    
-    flex-direction: column;
-    height: 100px;
-}
-
-.footer .first_f{        
-    display: flex;    
-    flex-direction: row;
-    justify-content:space-between;
-    height: 20px;
-    
-}
-
-
-.footer .logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 30px;        
-}
-
-.footer .logo .c2 .c3 .c4{
-    margin-left: -21%;        
-}
-
-.footer .logo .c5{
-    margin-left: -16%;
-}
-.footer .icons_f{
-    display: flex;
-    flex-direction: row;    
-    align-items: center;    
-    object-fit: contain;
-}
-
-.footer .icons_f figure {
-    margin-left: 10px;        
 }
