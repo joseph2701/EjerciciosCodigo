@@ -10,7 +10,7 @@
 
 
 .wrapper header {
-    background: blue;
+    background: rgb(16, 16, 17);
 }
 
 .wrapper main {
@@ -18,5 +18,9 @@
 }
 
 footer {
-    background: red;
+    
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    
 }
