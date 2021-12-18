@@ -1,0 +1,194 @@
+/*
+GLOBAL
+estilos globales, aca ira los selectores de 
+etiquetas globales
+*/
+
+body {
+    font-size: 16px;
+    font-family: arial;   
+    margin: auto;
+    width: 1440px; 
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  /*HEADER
+  aca iran estilos del header
+  */
+  .header{
+    background: #00AF1C;    
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+.header .logo{
+    font-size: 42px;
+    color: white;
+    text-decoration: none;
+}
+.header ul{    
+    display: flex;
+}
+.header li{
+    margin-left: 30px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN */
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+    padding-bottom: 81px;    
+}
+.main .list-figures{    
+    display: flex; 
+    box-sizing: border-box;       
+}
+.main .list-figures li{    
+    padding: 20px;
+    width: 382px;
+    height: 182px;
+    left: 868px;
+    top: 330px;
+}
+
+.main .list{
+    list-style: inside;
+    padding: 25px; 
+    margin-top: -10px;
+
+}
+.main .list li{    
+    list-style-type: disc; 
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.main h2{
+    padding: 14px;
+    margin-top: 33px;    
+    
+}
+.main p{
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+}
+
+  /*
+  HOME
+  aca iran estilos de la seccion home*/
+  .main .home h2{
+    color: #3B06D2;    
+}
+
+  /*
+  SERVICIOS
+  aca iran estilos de la seccion servicios*/
+  .main .services h2{
+    color: #D206B2;        
+}
+
+.main .services .list :nth-child(1){
+    color:  #FF0000;    
+}
+.main .services .list :nth-child(2){
+    color:  #3B06D2;    
+}
+.main .services .list :nth-child(3){
+    color:  orange;  
+}
+.main .services .list :nth-child(4){
+    color:  darkcyan;  
+}
+
+  /*
+  PORTAFOLIO
+  aca iran estilos de la seccion portafolio*/
+  .main .portafolio h2{
+    color: #D206B2;        
+}
+
+.main .portafolio .list :nth-child(1){
+    color:  darkgoldenrod;    
+}
+.main .portafolio .list :nth-child(2){
+    color:  rgb(173, 50, 19);    
+}
+.main .portafolio .list :nth-child(3){
+    color:  darkblue;  
+}
+.main .portafolio .list :nth-child(4){
+    color:  olivedrab;  
+}
+  /*
+  CONTACTO
+  aca iran estilos de la seccion contacto*/
+  .main .contact h2{
+    color: #06D2C6;        
+}
+
+.main .txtname{
+    width: 100%;
+    height: 88px;
+    margin-top: 20px;          
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.main .txtdetalle{
+    width: 100%;
+    height: 214px;    
+    margin-top: 20px;         
+    margin-left: 20px;
+    margin-right: 20px; 
+    color: black; 
+}
+.main .btnenviar{
+    width: 195px;
+    height: 73px;
+    margin-top: 20px;
+    color: #00AF1C;   
+    background-color: white;
+    border: #00AF1C 1px solid ;         
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+  /*
+  FOOTER
+  aca iran estilos de la seccion footer*/
+  
+.footer{
+    background: #00AF1C;
+    display: flex;
+    justify-content: space-between;    
+    padding: 20px;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 81px;
+    bottom: 0;
+    left: 0;
+    align-items: center;    
+    font-weight: bold;
+}
+.footer p{
+    text-decoration:none;
+    
+}
+.footer a{
+    text-decoration:none;
+    color: inherit;
+}
+
+

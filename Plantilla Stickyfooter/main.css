@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.wrapper header {
+    background: rgb(16, 16, 17);
+}
+
+.wrapper main {
+    flex-grow: 1;
+}
+
+footer {
+    
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    
+}

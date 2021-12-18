@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .wrap{
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;            
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-areas:    "header header header"
+                                    "nav main aside" 
+                                    "footer footer footer";   
+            height: 100vh;         
+        }
+        header{
+            grid-area:header;
+            background: red;
+        }
+        nav{
+            grid-area: nav;
+            background: blue;
+        }
+        main{
+            grid-area: main;
+            background: green;
+        }
+        aside{
+            grid-area: aside;
+            background: orange;
+        }
+        footer{
+            grid-area: footer;
+            background: blueviolet;
+        }
+
+        
+      
+    </style>
+    <main>
+        <div class="wrap">
+            
+            <header>
+                header
+            </header>
+            <nav>
+                nav
+            </nav>
+            <main>
+                main
+            </main>
+            <aside>
+                aside
+            </aside>
+            <footer>
+                footer
+            </footer>
+        </div>
+    </main>
+</body>
+</html>

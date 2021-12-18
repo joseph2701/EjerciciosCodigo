@@ -1,0 +1,94 @@
+/* css */
+/* se acostumbra a tener un estilo global para quitar el */
+/* ek pading y el margin a una pagina web */
+/* padding: espacio itnerno de un elemento */
+/* margin: espacio externo de un elemento */
+/* EL * activa el modo global */
+/* solo se recomienda usar el margin, padding y border-box */
+* {
+    padding: 0;
+    margin:0;
+}
+/* COMO APICAR UNA ETIQUETA ESPECIAL */
+/* COLOR: es el color de los textos */
+/* tambien acepta en codigo color:#aaa; */    
+/* font-family: es el atriuto que permite cambiar tipo de letra, siempre usar tipo " " */
+/* background-color */
+/* font-weight: peso o grosor 100-900*/
+/* border: borde de un elemento, : parametros: pixel, color,solid */
+/* display: propiedad que permite mostrar por default: display:block */
+/* text-align: permite poner texto en 4 formas: */
+/* text-align:right,left,center,justify */
+/* widht: ancho, height: altura */
+/* fonta-size: sirve para manipular tamaño texto */
+/* text-decoration: propiedad para asignar estilos a un texto */
+
+h1 {
+    color:red;    
+    background-color: black;
+    font-weight:800;
+    text-align: center;    
+    
+}
+body{
+    font-family: "Gill Sans","Helvetica","Arial","Sans-serif";
+    /* cuando una fuente no esta instalada, lo descargamos y agregamos al proyecto */
+    /* como un archivo o un link de referencia, si un stilo no esta, proponer otras opciones */
+}
+nav{
+    border: 2px solid maroon;
+    text-decoration:none;
+}
+
+section{
+    background-color: springgreen;
+    border: solid slateblue 3px;    
+    font-size: 22px;
+}
+
+article p{
+    color:blue;    
+    text-align: justify;
+}
+
+li{
+    color:rgb(243, 239, 12);
+}
+ul{
+    background-color: gray;
+    border: 2px solid lavender;
+}
+ul li{
+    list-style:none;
+    display:inline;
+}
+
+div{
+    border: 5px solid hotpink;
+    text-align: center;
+}
+
+img{
+    width: 50%;
+    height: 200px;
+}
+
+/* para acceder a un ID usamos # + nombre asignado */
+/* usar id, solo para partes especificas */
+#Titulo{
+color: navajowhite;
+}
+
+#logo{
+    width: 200px;
+    height: 100px;
+}
+
+#text__introduccion{
+    text-align:center;
+}
+
+/* para poder repetir identificadores, mejor usar clases */
+.text_pagina{
+color: chocolate;
+}
