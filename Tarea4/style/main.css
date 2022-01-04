@@ -7,15 +7,16 @@
   display: flex;
   flex-direction: column;
   width: 956px;
-  margin:auto;
-  header {    
-      display: flex;
-      flex-direction: row;
-      justify-content:space-between ;
-      align-items: center;  
-      height: 5%;
-  }    
+  margin:auto;     
 }
+
+header {    
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  align-items: center;  
+  height: 5%;
+} 
 
 
 .wrapper a{
@@ -25,7 +26,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1% 2.5%;    
+  padding: 1% 2.5%;      
 }
 
 .wrapper .logo .c2{
@@ -299,8 +300,7 @@ margin-top: 3.5%;
 
 .wrapper main .blog{    
   display: flex;  
-  flex-direction: column;          
-  background: yellow;
+  flex-direction: column; 
   padding-top: 2.5%;            
   padding-bottom: 2.5%;            
 }
@@ -336,7 +336,6 @@ margin-top: 3.5%;
 }
 
 .wrapper main .blog .panel_b{
-  background: black;   
   width: 67%;
   display: flex;
   flex-wrap: wrap;
@@ -367,7 +366,8 @@ margin-top: 3.5%;
   font-family: "Raleway";
   font-size: 11px;
   font-weight: normal;    
-  line-height: 20px; 
+  line-height: 20px;
+  background-color : black; 
 }
 
 .wrapper main .blog .panel_b  .space_2 .description_b figure {    
@@ -473,6 +473,7 @@ margin-top: 3.5%;
   text-align: center;
   color: white;
   font-family: "raleway";
+  background-color : #6D0AD3; 
 }
 
 .wrapper main .contact{ 
