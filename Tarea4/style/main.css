@@ -494,8 +494,6 @@ padding-bottom: 2.5%;
   color: #0098EF;
 }
 
-
-
 .wrapper main .contact input {
   width: 40%;
   padding: 2%;
@@ -556,6 +554,12 @@ padding-bottom: 2.5%;
   width: 100%;    
 }
 
+.footer .first_f p{
+  color:#00CF95;
+  font-family: ralewey; 
+}
+
+
 .footer .icons_f{
   display: flex;
   flex-direction: row;    
@@ -564,5 +568,3 @@ padding-bottom: 2.5%;
   width: 20%;
   margin-right: 2%;
 }
-
-
