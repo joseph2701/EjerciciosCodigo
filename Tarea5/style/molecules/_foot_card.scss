@@ -1,0 +1,37 @@
+/*****FOOT_CARD*****/
+.foot_card{        
+    display: flex;            
+    flex-direction: row;
+    justify-content: space-between;     
+    
+    h5{            
+        font-size: $font-size-h5;
+        font-family: $font-family-title;
+        color: $font-color-primary;
+        padding-bottom: 4px;
+        font-weight: bold;
+    }
+
+    p{           
+        font-size: $font-size-h5;
+        font-family: $font-family-p;
+        color: $font-color-primary;
+        opacity: 40%;               
+    }
+    
+    &_content{
+        display: flex;
+        flex-direction: column;   
+        text-align: center;                           
+    }
+
+    &_image{
+        display: inline-flex;
+        align-items: center;            
+
+        &  img{
+            padding-left: 38px;
+            height: 19px;               
+        };                
+    }
+}

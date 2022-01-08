@@ -1,0 +1,28 @@
+/****title****/
+
+.title{
+    background: url("/Tarea5/image/Mask\ Group.png");
+    background-size: 100%;    
+    height: 250px;     
+    display: flex;       
+    
+    &_div{        
+        display: flex;
+        flex-direction: column;        
+        margin: auto;
+        color: $font-color-default;
+        width: 55%;        
+                
+        h1{
+            font-size: $font-size-h1;
+            font-family: $font-family-title;
+            padding-bottom: 16px;              
+        }
+
+        h2{
+            font-size: $font-size-h2;
+            font-family: $font-family-title;
+            line-height: 30px;            
+        }
+    }  
+}

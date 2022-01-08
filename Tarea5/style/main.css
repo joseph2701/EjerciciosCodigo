@@ -1,21 +1,4 @@
-/****GLOBALAES****/
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: auto;
-  width: 1360px;
-}
-
+/*MIXINGS*/
 /****HEADER****/
 header {
   display: -webkit-box;
@@ -48,6 +31,7 @@ header li {
   font-size: 20px;
   font-family: "Helvetica";
   color: #1F3F68;
+  font-weight: bold;
 }
 
 /****MAIN****/
@@ -88,7 +72,7 @@ main {
   opacity: 40%;
 }
 
-.foot_card .content_foot_card {
+.foot_card_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +83,7 @@ main {
   text-align: center;
 }
 
-.foot_card .image_foot_card {
+.foot_card_image {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -108,7 +92,7 @@ main {
           align-items: center;
 }
 
-.foot_card .image_foot_card img {
+.foot_card_image img {
   padding-left: 38px;
   height: 19px;
 }
@@ -162,10 +146,10 @@ main {
   text-align: center;
   padding-top: 56px;
   /*****CARD PRIMARRY*****/
-  /*****CARD PRIMARRY*****/
+  /*****CARD SECONDARY*****/
 }
 
-.popular .search {
+.popular_search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,17 +159,17 @@ main {
   width: 100%;
 }
 
-.popular .search figure {
+.popular_search figure {
   padding: 19px;
   position: absolute;
 }
 
-.popular .search img {
+.popular_search img {
   width: 18px;
   height: 18px;
 }
 
-.popular .search input {
+.popular_search input {
   width: 100%;
   height: 56px;
   border: none;
@@ -212,12 +196,12 @@ main {
   display: flex;
 }
 
-.popular .card_primary .content_card_primary {
+.popular .card_primary_content {
   width: 40%;
   padding-right: 20px;
 }
 
-.popular .card_primary .content_card_primary h3 {
+.popular .card_primary_content h3 {
   font-size: 36px;
   font-family: "Helvetica";
   color: #1F3F68;
@@ -226,7 +210,7 @@ main {
   font-weight: bold;
 }
 
-.popular .card_primary .content_card_primary > p {
+.popular .card_primary_content > p {
   padding-top: 16px;
   padding-bottom: 16px;
   font-size: 16px;
@@ -262,12 +246,12 @@ main {
   width: 32%;
 }
 
-.popular .card_general_secondary .card_secondary .fig_card_secondary {
+.popular .card_general_secondary .card_secondary_fig {
   width: 100%;
   height: 200px;
 }
 
-.popular .card_general_secondary .card_secondary .content_card_secondary h4 {
+.popular .card_general_secondary .card_secondary_content h4 {
   font-size: 22px;
   font-family: "Helvetica";
   color: #1F3F68;
@@ -277,7 +261,7 @@ main {
   font-weight: bold;
 }
 
-.popular .card_general_secondary .card_secondary .content_card_secondary h4 p {
+.popular .card_general_secondary .card_secondary_content h4 p {
   font-size: 16px;
   font-family: "Arial";
   color: black;
@@ -295,6 +279,8 @@ main {
   font-family: "Helvetica";
   font-size: 16px;
   text-align: right;
+  font-weight: bold;
+  color: #356EAD;
 }
 
 .popular hr {
@@ -343,12 +329,12 @@ main {
   height: 210px;
 }
 
-.all_article .card_regular .fig_card_regular {
+.all_article .card_regular_fig {
   height: 210px;
   width: 100%;
 }
 
-.all_article .card_regular .content_card_regular {
+.all_article .card_regular_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,7 +349,7 @@ main {
   width: 63.5%;
 }
 
-.all_article .card_regular .content_card_regular h4 {
+.all_article .card_regular_content h4 {
   font-size: 18px;
   font-family: "Helvetica";
   color: #1F3F68;
@@ -373,7 +359,7 @@ main {
   font-weight: bold;
 }
 
-.all_article .card_regular .content_card_regular > p {
+.all_article .card_regular_content > p {
   padding-bottom: 35px;
   padding-right: 35px;
   font-size: 14px;
@@ -383,7 +369,7 @@ main {
   text-align: left;
 }
 
-.all_article .foot_popular {
+.all_article_foot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,13 +379,13 @@ main {
   padding-top: 56px;
 }
 
-.all_article .foot_popular .arrows {
+.all_article_foot .arrows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.all_article .foot_popular .arrows p {
+.all_article_foot .arrows p {
   padding-left: 10px;
   font-family: "Arial";
   font-size: 16px;

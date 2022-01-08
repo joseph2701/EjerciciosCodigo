@@ -1,0 +1,141 @@
+
+/*****POPULAR*****/
+.popular{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    padding-top: 56px;
+
+    &_search{
+        display: flex;                
+        text-align: center;               
+        vertical-align: middle;        
+        margin: auto;
+        width: 100%;        
+        
+        figure{                        
+            padding: 19px;
+            position: absolute;
+        }
+
+        img{                         
+            width: 18px;
+            height: 18px;            
+        }
+
+        input{
+            width: 100%;
+            height: 56px;
+            border: none;
+            background: #F4F4F4;  
+            padding-left: 60px; 
+            border-radius:10px;            
+            font-size: 16px;
+            color:#1F3F68;
+        }        
+    }
+
+    h2{
+        padding-top: 56px;
+        padding-bottom: 34px;
+        text-align: left;
+        font-size: $font-size-h2;
+        font-family: $font-family-title;
+        color:$font-color-secondary;
+        font-weight: bold;        
+    }
+
+    /*****CARD PRIMARRY*****/
+    & .card_primary{
+        display: flex;
+
+        &_content{
+            width: 40%;
+            padding-right: 20px;
+
+            h3{
+                font-size: $font-size-h3;  
+                font-family: $font-family-title;            
+                color: $font-color-primary;
+                text-align: left;     
+                line-height: $line-heigt-h3; 
+                font-weight: bold;      
+            }
+    
+           > p{
+                padding-top: 16px;
+                padding-bottom: 16px;
+                font-size: $font-size-p;  
+                font-family: $font-family-p;            
+                color: $font-color-regular;
+                line-height: $line-heigt-p;       
+                text-align: left; 
+            }
+        }        
+    }
+
+     /*****CARD SECONDARY*****/
+     & .card_general_secondary{
+        width: 100%;   
+        display: flex;
+        flex-direction: row;
+        padding-top: 33px;
+        justify-content: space-between;
+
+        .card_secondary{
+            display: flex;
+            flex-direction: column;    
+            width:32%;            
+            
+            &_fig{
+                width: 100%;
+                height:200px;
+            }
+
+            &_content{
+        
+                h4{
+                    font-size: $font-size-h4;  
+                    font-family: $font-family-title;            
+                    color: $font-color-primary;
+                    text-align: left;     
+                    line-height: $line-heigt-h4; 
+                    padding-top: 12px;  
+                    font-weight: bold; 
+
+                    p{                
+                        font-size: $font-size-p;  
+                        font-family: $font-family-p;            
+                        color: $font-color-regular;
+                        line-height: $line-heigt-p;       
+                        text-align: left; 
+                        padding-top: 12px;
+                        padding-bottom: 34px;
+                        font-weight: normal; 
+                    }
+                }
+                
+            }
+        }
+
+     }
+
+    nav{
+        padding-top: 54px;
+        padding-bottom: 26px;
+        width: 100%;
+        font-family: $font-family-title;
+        font-size: $font-size-p;
+        text-align: right;    
+        font-weight: bold;    
+        color: $font-color-secondary;
+    }
+
+    hr{
+        width: 100%;
+        border: 1px solid grey;  
+    }   
+    
+}

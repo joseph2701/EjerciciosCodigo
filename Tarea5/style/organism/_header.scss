@@ -1,0 +1,27 @@
+
+/****HEADER****/
+
+header{
+    display:flex; 
+    align-items: center;    
+    height: 100px;
+
+    div{
+        width: 100%; 
+        padding-left: 95px;       
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    li{
+        padding-right: 36px;
+        padding-left: 36px;
+        font-size: $font-size-h2;
+        font-family: $font-family-title;
+        color: $font-color-primary;
+        font-weight: bold;
+    }   
+}

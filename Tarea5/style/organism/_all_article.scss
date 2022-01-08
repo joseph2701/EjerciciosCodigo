@@ -1,0 +1,84 @@
+/****ALL ARTICLE****/
+
+.all_article{    
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    padding-top: 56px;
+    padding-bottom: 98px;
+
+    h2{      
+      font-size: $font-size-h2;
+      font-family: $font-family-title;
+      color: $font-color-secondary;
+      text-align: left;      
+      line-height: $line-heigt-h2; 
+      padding-bottom: 2px;  
+      font-weight: bold; 
+    }
+
+    .card_regular{
+        display: flex;       
+        padding-top: 32px;       
+        justify-content: space-between;
+
+
+        >figure{
+            width: 35%;
+            height: 210px;
+        }
+
+        &_fig{            
+            height: 210px;
+            width: 100%;
+        }
+
+        &_content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 20px;            
+            width: 63.5%;
+
+            h4{
+                font-size: $font-size-hregular;  
+                font-family: $font-family-title;            
+                color: $font-color-primary;
+                text-align: left;     
+                line-height: $line-heigt-h4b; 
+                padding-top: 12px;   
+                 
+                font-weight: bold; 
+            }
+    
+            >p{                
+                padding-bottom: 35px;
+                padding-right: 35px;
+                font-size: $font-size-h5;  
+                font-family: $font-family-p;            
+                color: $font-color-regular;
+                line-height: $line-heigt-p;       
+                text-align: left; 
+            }
+        }  
+    }
+    
+    &_foot{
+        display: flex;
+        justify-content: space-between;        
+        padding-top: 56px;                
+
+        .arrows{
+            display: flex;
+            
+            p{
+                padding-left: 10px;
+                font-family: $font-family-p;
+                font-size: $font-size-p;
+                color: $font-color-secondary;
+            }
+        }
+    }
+}
