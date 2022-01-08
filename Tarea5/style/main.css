@@ -1,48 +1,4 @@
 /*MIXINGS*/
-/****HEADER****/
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100px;
-}
-
-header div {
-  width: 100%;
-  padding-left: 95px;
-}
-
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-header li {
-  padding-right: 36px;
-  padding-left: 36px;
-  font-size: 20px;
-  font-family: "Helvetica";
-  color: #1F3F68;
-  font-weight: bold;
-}
-
-/****MAIN****/
-main {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  text-align: center;
-  width: 100%;
-}
-
 /*****FOOT_CARD*****/
 .foot_card {
   display: -webkit-box;
@@ -56,7 +12,6 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .foot_card h5 {
   font-size: 14px;
   font-family: "Helvetica";
@@ -64,14 +19,12 @@ main {
   padding-bottom: 4px;
   font-weight: bold;
 }
-
 .foot_card p {
   font-size: 14px;
   font-family: "Arial";
   color: #1F3F68;
   opacity: 40%;
 }
-
 .foot_card_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,7 +35,6 @@ main {
           flex-direction: column;
   text-align: center;
 }
-
 .foot_card_image {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -91,22 +43,47 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .foot_card_image img {
   padding-left: 38px;
   height: 19px;
 }
 
+/****GLOBALES****/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  width: 1360px;
+}
+
+/****MAIN****/
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  width: 100%;
+}
+
 /****title****/
 .title {
-  background: url("/Tarea5/image/Mask Group.png");
+  background: url("../image/Mask Group.png");
   background-size: 100%;
   height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .title_div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,20 +96,50 @@ main {
   color: white;
   width: 55%;
 }
-
 .title_div h1 {
   font-size: 44px;
   font-family: "Helvetica";
   padding-bottom: 16px;
 }
-
 .title_div h2 {
   font-size: 20px;
   font-family: "Helvetica";
   line-height: 30px;
 }
 
-/*****PPPULAR*****/
+/****HEADER****/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+header div {
+  width: 100%;
+  padding-left: 95px;
+}
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header li {
+  padding-right: 36px;
+  padding-left: 36px;
+  font-size: 20px;
+  font-family: "Helvetica";
+  color: #1F3F68;
+  font-weight: bold;
+}
+
+/*****POPULAR*****/
 .popular {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,7 +155,6 @@ main {
   /*****CARD PRIMARRY*****/
   /*****CARD SECONDARY*****/
 }
-
 .popular_search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,17 +164,14 @@ main {
   margin: auto;
   width: 100%;
 }
-
 .popular_search figure {
   padding: 19px;
   position: absolute;
 }
-
 .popular_search img {
   width: 18px;
   height: 18px;
 }
-
 .popular_search input {
   width: 100%;
   height: 56px;
@@ -179,7 +182,6 @@ main {
   font-size: 16px;
   color: #1F3F68;
 }
-
 .popular h2 {
   padding-top: 56px;
   padding-bottom: 34px;
@@ -189,18 +191,15 @@ main {
   color: #356EAD;
   font-weight: bold;
 }
-
 .popular .card_primary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .popular .card_primary_content {
   width: 40%;
   padding-right: 20px;
 }
-
 .popular .card_primary_content h3 {
   font-size: 36px;
   font-family: "Helvetica";
@@ -209,7 +208,6 @@ main {
   line-height: 46px;
   font-weight: bold;
 }
-
 .popular .card_primary_content > p {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -219,7 +217,6 @@ main {
   line-height: 26px;
   text-align: left;
 }
-
 .popular .card_general_secondary {
   width: 100%;
   display: -webkit-box;
@@ -234,7 +231,6 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .popular .card_general_secondary .card_secondary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,12 +241,10 @@ main {
           flex-direction: column;
   width: 32%;
 }
-
 .popular .card_general_secondary .card_secondary_fig {
   width: 100%;
   height: 200px;
 }
-
 .popular .card_general_secondary .card_secondary_content h4 {
   font-size: 22px;
   font-family: "Helvetica";
@@ -260,7 +254,6 @@ main {
   padding-top: 12px;
   font-weight: bold;
 }
-
 .popular .card_general_secondary .card_secondary_content h4 p {
   font-size: 16px;
   font-family: "Arial";
@@ -271,7 +264,6 @@ main {
   padding-bottom: 34px;
   font-weight: normal;
 }
-
 .popular nav {
   padding-top: 54px;
   padding-bottom: 26px;
@@ -282,7 +274,6 @@ main {
   font-weight: bold;
   color: #356EAD;
 }
-
 .popular hr {
   width: 100%;
   border: 1px solid grey;
@@ -303,7 +294,6 @@ main {
   padding-top: 56px;
   padding-bottom: 98px;
 }
-
 .all_article h2 {
   font-size: 20px;
   font-family: "Helvetica";
@@ -313,7 +303,6 @@ main {
   padding-bottom: 2px;
   font-weight: bold;
 }
-
 .all_article .card_regular {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,17 +312,14 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .all_article .card_regular > figure {
   width: 35%;
   height: 210px;
 }
-
 .all_article .card_regular_fig {
   height: 210px;
   width: 100%;
 }
-
 .all_article .card_regular_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,7 +334,6 @@ main {
   padding-left: 20px;
   width: 63.5%;
 }
-
 .all_article .card_regular_content h4 {
   font-size: 18px;
   font-family: "Helvetica";
@@ -358,7 +343,6 @@ main {
   padding-top: 12px;
   font-weight: bold;
 }
-
 .all_article .card_regular_content > p {
   padding-bottom: 35px;
   padding-right: 35px;
@@ -368,7 +352,6 @@ main {
   line-height: 26px;
   text-align: left;
 }
-
 .all_article_foot {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,13 +361,11 @@ main {
           justify-content: space-between;
   padding-top: 56px;
 }
-
 .all_article_foot .arrows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .all_article_foot .arrows p {
   padding-left: 10px;
   font-family: "Arial";
@@ -409,7 +390,6 @@ footer {
   width: 65%;
   margin: auto;
 }
-
 .intersted .intersted_top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,7 +399,6 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-
 .intersted .intersted_top .content_intersted_top {
   width: 50%;
   display: -webkit-box;
@@ -430,7 +409,6 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .intersted .intersted_top .content_intersted_top h3 {
   font-size: 36px;
   font-family: "Helvetica";
@@ -440,7 +418,6 @@ footer {
   width: 70%;
   text-align: left;
 }
-
 .intersted .intersted_top .content_intersted_top p {
   padding-top: 32px;
   padding-bottom: 90px;
@@ -455,7 +432,6 @@ footer {
   text-align: left;
   width: 90%;
 }
-
 .intersted .intersted_top .button_intersted_top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,7 +444,6 @@ footer {
           justify-content: right;
   width: 50%;
 }
-
 .intersted .intersted_top .button_intersted_top button {
   width: 220px;
   height: 56px;
@@ -478,12 +453,10 @@ footer {
   font-family: "Arial";
   font-size: 16px;
 }
-
 .intersted hr {
   width: 100%;
   border: 1px solid white;
 }
-
 .intersted .intersted_button {
   width: 100%;
   padding: 98px 0 64px 0;
@@ -494,12 +467,10 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .intersted .intersted_button .lu_primary_intersted_button {
   width: 30%;
   color: white;
 }
-
 .intersted .intersted_button .lu_primary_intersted_button lu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -510,7 +481,6 @@ footer {
           flex-direction: column;
   list-style: none;
 }
-
 .intersted .intersted_button .lu_primary_intersted_button lu li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,20 +490,17 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-
 .intersted .intersted_button .lu_primary_intersted_button lu li span {
   font-size: 16px;
   font-family: "Arial";
   padding-top: 5px;
 }
-
 .intersted .intersted_button .lu_primary_intersted_button lu li a {
   padding-left: 16px;
   font-size: 16px;
   font-family: "Arial";
   line-height: 26px;
 }
-
 .intersted .intersted_button .lu_primary_intersted_button lu li:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -543,19 +510,16 @@ footer {
           align-items: center;
   padding-bottom: 32px;
 }
-
 .intersted .intersted_button .lu_primary_intersted_button lu li:nth-child(1) h2 {
   padding-left: 25px;
   font-size: 28px;
   font-family: "Gilroy";
   color: white;
 }
-
 .intersted .intersted_button .lu_secondary_intersted_button {
   width: 25%;
   color: white;
 }
-
 .intersted .intersted_button .lu_secondary_intersted_button lu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -567,21 +531,18 @@ footer {
   list-style: none;
   padding-left: 35%;
 }
-
 .intersted .intersted_button .lu_secondary_intersted_button lu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 24px;
 }
-
 .intersted .intersted_button .lu_secondary_intersted_button lu li a {
   padding-left: 16px;
   font-size: 16px;
   font-family: "Arial";
   line-height: 26px;
 }
-
 .intersted .intersted_button .lu_secondary_intersted_button lu li:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -594,7 +555,6 @@ footer {
   font-family: "Helvetica";
   color: white;
 }
-
 .intersted .right_reserved {
   padding: 40px 0 64px 0;
   font-size: 16px;
@@ -602,4 +562,3 @@ footer {
   color: white;
   opacity: 40%;
 }
-/*# sourceMappingURL=main.css.map */
