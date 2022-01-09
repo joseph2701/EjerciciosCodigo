@@ -208,4 +208,55 @@ footer{
         }
         
     }  
+
+    @include breakpoint(xs) {                 
+        .intersted{
+            width: 95%;
+
+            .intersted_top{
+                display: flex;
+                flex-direction: column;        
+    
+                &_content{
+                    width: 95%;
+    
+                    h3{                                   
+                        padding-top: 30px;
+                        width: 60%;                
+                        text-align: left; 
+                    }
+            
+                    >p{
+                        padding-top: 20px;
+                        padding-bottom: 20px;                                        
+                        width: 100%;                                  
+                    }  
+                      
+                }
+    
+                &_button{                   
+                    justify-content: right;            
+                    width: 95%;
+                    padding-bottom: 30px;
+    
+                    button{
+                        min-width: 100%;                        
+                    }
+                }         
+            }
+
+            .intersted_button{
+                display: flex;
+                flex-direction: column;                
+            } 
+            .intersted_right_reserved{
+                padding: 20px 0 20px 0;
+            }   
+        }  
+
+          
+            
+
+    }
+
 }

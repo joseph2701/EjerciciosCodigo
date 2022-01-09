@@ -64,10 +64,11 @@
           flex-direction: column;
   margin: auto;
   width: 1360px;
+  min-width: 525px;
 }
 @media (max-width: 880px) {
   .wrapper {
-    width: 100%;
+    width: auto;
     margin: auto;
   }
 }
@@ -132,6 +133,21 @@ main {
 @media (max-width: 585px) {
   .title {
     background-size: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    height: auto;
+  }
+  .title_div h1 {
+    padding-top: 30px;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .title_div h2 {
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -180,21 +196,15 @@ header li {
 }
 @media (max-width: 585px) {
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  header ul {
-    background: yellow;
-  }
-  header ul li {
-    padding-left: 2%;
+  header div {
+    padding-left: 20px;
   }
   header ul li:last-child {
-    padding-right: 2px;
+    padding-right: 20px;
   }
 }
 
@@ -301,6 +311,7 @@ header li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: auto;
   width: 32%;
 }
 .popular .card_general_secondary .card_secondary_fig {
@@ -347,6 +358,7 @@ header li {
   }
   .popular h2 {
     padding-top: 20px;
+    padding-bottom: 22px;
   }
   .popular .card_primary {
     overflow: hidden;
@@ -358,9 +370,30 @@ header li {
     background-size: 60%;
     min-height: 100%;
   }
+  .popular .foot_card {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .popular .foot_card .foot_card_content {
+    width: 60%;
+    text-align: left;
+  }
+  .popular .foot_card .foot_card_image {
+    width: 40%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  .popular .foot_card .foot_card_image img {
+    padding-left: 10px;
+  }
 }
 @media (max-width: 585px) {
   .popular .card_primary {
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -369,9 +402,56 @@ header li {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .popular .card_primary h2 {
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
   .popular .card_primary_content {
-    background: green;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    min-width: 100%;
+  }
+  .popular .card_primary_content h3 {
+    font-size: 22px;
+  }
+  .popular .card_primary_content p {
+    font-size: 14px;
+    padding-top: 0px;
+  }
+  .popular .card_primary .card_primary_image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .popular .card_primary .card_primary_image img {
+    background-size: cover;
+    min-width: 100%;
+  }
+  .popular .card_general_secondary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    padding-top: 13px;
+  }
+  .popular .card_general_secondary .card_secondary {
+    overflow: hidden;
     width: 100%;
+  }
+  .popular .card_general_secondary .card_secondary_fig {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .popular .card_general_secondary .card_secondary_content h4 p {
+    padding-bottom: 20px;
+  }
+  .popular .card_general_secondary .card_secondary:last-child {
+    display: none;
   }
 }
 
@@ -475,6 +555,46 @@ header li {
   .all_article .card_regular_content > p {
     padding-right: 0px;
     text-align: left;
+  }
+}
+@media (max-width: 585px) {
+  .all_article {
+    padding-bottom: 0px;
+  }
+  .all_article .card_regular {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  .all_article .card_regular_content {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .all_article .card_regular > figure {
+    width: 100%;
+    height: auto;
+  }
+  .all_article .card_regular .card_regular .card_regular_fig {
+    min-width: 100%;
+  }
+  .all_article .card_regular:nth-child(n+4) {
+    display: none;
+  }
+  .all_article_foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  .all_article_foot .arrows:first-child {
+    display: none;
   }
 }
 
@@ -707,5 +827,54 @@ footer .intersted_right_reserved {
   }
   footer .intersted .intersted_button .intersted_button_lu_secondary lu {
     padding: 0;
+  }
+}
+@media (max-width: 585px) {
+  footer .intersted {
+    width: 95%;
+  }
+  footer .intersted .intersted_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .intersted .intersted_top_content {
+    width: 95%;
+  }
+  footer .intersted .intersted_top_content h3 {
+    padding-top: 30px;
+    width: 60%;
+    text-align: left;
+  }
+  footer .intersted .intersted_top_content > p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  footer .intersted .intersted_top_button {
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    width: 95%;
+    padding-bottom: 30px;
+  }
+  footer .intersted .intersted_top_button button {
+    min-width: 100%;
+  }
+  footer .intersted .intersted_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .intersted .intersted_right_reserved {
+    padding: 20px 0 20px 0;
   }
 }

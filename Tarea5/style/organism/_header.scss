@@ -37,24 +37,19 @@ header{
     }
 
     
-    @include breakpoint(xs) {         
-        display: flex;
-        justify-content: space-between;       
-        
-                
+    @include breakpoint(xs) {        
+     
+        justify-content: space-between; 
+
+        div{
+            padding-left: 20px;
+        }
+
         ul{
-            background: yellow;
             
-            li{
-                padding-left: 2%;
-                // padding-right: 2%;
-
-                &:last-child{
-                    padding-right: 2px;
-                }
-            }
-
+            li:last-child{
+                padding-right: 20px;
+            }                     
         }   
-     }
-   
+     }  
 }

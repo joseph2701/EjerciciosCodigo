@@ -91,4 +91,38 @@
         }
 
      }
+     @include breakpoint(xs) {         
+        padding-bottom: 0px;
+
+        .card_regular{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+
+            &_content{
+                width: 100%;
+                padding-left: 0px;                        
+            }
+
+            >figure{
+                width: 100%;
+                height: auto;
+            }
+            .card_regular .card_regular_fig{
+                min-width: 100%;                
+            }
+
+            &:nth-child(n+4){
+                display:none;
+            }
+        }
+
+        &_foot {
+            display: flex;
+            justify-content: right;
+            .arrows:first-child{
+                display: none;
+            }
+        }
+     }
 }

@@ -8,17 +8,12 @@
     flex-direction: column;    
     margin: auto;    
     width: 1360px;
+    min-width: 525px;
 
     @include breakpoint(md) {         
-        width: 100%; 
-        margin: auto;               
-     }
-
-    
-
-
-   
-   
+        width: auto;
+        margin: auto;
+     }   
 }
 
 

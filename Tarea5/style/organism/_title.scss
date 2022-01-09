@@ -30,7 +30,27 @@
     } 
 
     @include breakpoint(xs) {
-        background-size: auto;        
+        background-size: auto;
+        display: flex;
+        justify-items: center;
+        height: auto;    
+        
+        &_div{
+            
+            h1{
+                padding-top: 30px;
+                font-size: $font-size-h2;                
+                padding-bottom: 10px;
+            }
+    
+            h2{
+                font-size: $font-size-p;                
+                line-height: 30px;   
+                padding-bottom: 50px;         
+            } 
+        }
+        
+        
    } 
      
 }
