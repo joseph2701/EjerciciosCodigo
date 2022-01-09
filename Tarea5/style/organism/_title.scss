@@ -23,5 +23,14 @@
             font-family: $font-family-title;
             line-height: 30px;            
         }
-    }  
+    } 
+
+    @include breakpoint(md) {
+         background-size: auto;        
+    } 
+
+    @include breakpoint(xs) {
+        background-size: auto;        
+   } 
+     
 }

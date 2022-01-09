@@ -60,7 +60,7 @@
                 font-family: $font-family-p;            
                 color: $font-color-regular;
                 line-height: $line-heigt-p;       
-                text-align: left; 
+                text-align: left;                 
             }
         }  
     }
@@ -81,4 +81,14 @@
             }
         }
     }
+
+    @include breakpoint(md) {         
+        width: 95%; 
+        
+        .card_regular_content >p{  
+            padding-right: 0px;
+            text-align: left;
+        }
+
+     }
 }

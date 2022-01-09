@@ -1,158 +1,211 @@
 /*****FOOTER*****/
 footer{
     background: #316099;
-}
 
-.intersted{
-    background: #316099;
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    margin: auto;    
-
-    & .intersted_top{
+    .intersted{
+        background: #316099;
         display: flex;
-        flex-direction: row;        
+        flex-direction: column;
+        width: 65%;
+        margin: auto;    
 
-        & .content_intersted_top{
-            width: 50%;
+        .intersted_top{
             display: flex;
-            flex-direction: column;                        
+            flex-direction: row;        
 
-            h3{
-                font-size: $font-size-h3;
-                font-family: $font-family-title;
-                line-height: $line-heigt-h3; 
-                color: $font-color-default;               
-                padding-top: 91px;
-                width: 70%;                
-                text-align: left; 
+            &_content{
+                width: 50%;
+                display: flex;
+                flex-direction: column;                        
+
+                h3{
+                    font-size: $font-size-h3;
+                    font-family: $font-family-title;
+                    line-height: $line-heigt-h3; 
+                    color: $font-color-default;               
+                    padding-top: 91px;
+                    width: 70%;                
+                    text-align: left; 
+                }
+        
+                p{
+                    padding-top: 32px;
+                    padding-bottom: 90px;                
+                    justify-content: left;
+                    font-size: $font-size-p;
+                    color: $font-color-default;
+                    font-family: $font-family-p;
+                    line-height: $line-heigt-p;
+                    opacity: 60%;
+                    text-align: left;
+                    width: 90%;                                  
+                }  
+                  
             }
-    
-            p{
-                padding-top: 32px;
-                padding-bottom: 90px;                
-                justify-content: left;
-                font-size: $font-size-p;
-                color: $font-color-default;
-                font-family: $font-family-p;
-                line-height: $line-heigt-p;
-                opacity: 60%;
-                text-align: left;
-                width: 90%;                                  
-            }              
+
+            &_button{
+                display: flex;
+                align-items: center;
+                justify-content: right;            
+                width: 50%;
+
+                button{
+                    width: 220px;
+                    height: 56px;
+                    border: none;
+                    color: $font-color-default;
+                    background: #5A98D0;
+                    font-family: $font-family-p;
+                    font-size: $font-size-p;                   
+                }
+            }         
         }
 
-        & .button_intersted_top{
-            display: flex;
-            align-items: center;
-            justify-content: right;            
-            width: 50%;
+        hr{
+            width: 100%;
+            border: 1px solid $font-color-default;        
+        } 
 
-            button{
-                width: 220px;
-                height: 56px;
-                border: none;
+        .intersted_button{
+            width: 100%;    
+            padding: 98px 0 64px 0;
+            display: flex;
+            justify-content: space-between;
+
+            &_lu_primary  {        
+                width: 30%;
                 color: $font-color-default;
-                background: #5A98D0;
-                font-family: $font-family-p;
-                font-size: $font-size-p;
+
+                lu{
+                    display: flex;
+                    flex-direction: column;            
+                    list-style: none;                
+
+                    & li{                
+                        display: flex;                            
+                        padding-bottom: 24px;
+                        align-items: flex-start;
+
+                        span{
+                            font-size: $font-size-p;
+                            font-family: $font-family-p;                                                
+                            padding-top: 5px;
+                        }
+
+                        a{
+                            padding-left: 16px;
+                            font-size: $font-size-p;
+                            font-family: $font-family-p; 
+                            line-height: $line-heigt-p;
+                        }            
+                    }
+                    & li:nth-child(1){                
+                        display: flex;                           
+                        align-items: center;
+                        padding-bottom: 32px;
+                        font-weight: bold;
+
+                        h2{
+                            padding-left: 25px;
+                            font-size: 28px;
+                            font-family: "Gilroy";
+                            color: $font-color-default;
+                        }            
+                    }
+                }
             }
+
+            &_lu_secondary {        
+                width: 25%;
+                color: $font-color-default;
+
+                lu{
+                    display: flex;
+                    flex-direction: column;            
+                    list-style: none;
+                    padding-left: 35%;
+
+                    & li{                
+                        display: flex;                            
+                        padding-bottom: 24px;                
+
+                        a{
+                            padding-left: 16px;
+                            font-size: $font-size-p;
+                            font-family: $font-family-p; 
+                            line-height: $line-heigt-p;
+                        }            
+                    }
+                    
+                    & li:nth-child(1){                
+                        display: flex;                           
+                        align-items: center;
+                        padding-bottom: 32px;                    
+                        font-size: $font-size-h2;
+                        font-family: $font-family-title;
+                        color: $font-color-default;
+                        font-weight: bold;                
+                    }
+                }
+            }   
+        }
+        
+        &_right_reserved{    
+            padding: 40px 0 64px 0;
+            font-size: $font-size-p;
+            font-family: $font-family-p;
+            color: $font-color-default;
+            opacity: 40%;
         }         
     }
 
-    hr{
+    @include breakpoint(md) {         
         width: 100%;
-        border: 1px solid $font-color-default;        
-    } 
+        margin: auto;
 
-    .intersted_button{
-        width: 100%;    
-        padding: 98px 0 64px 0;
-        display: flex;
-        justify-content: space-between;
+        .intersted{
+            width: 78%; 
 
-        & .lu_primary_intersted_button {        
-            width: 30%;
-            color: $font-color-default;
+            .intersted_top_content {
+                h3{                                                              
+                    padding-top: 30px;                    
+                }
 
-            lu{
+                >p{
+                    padding-bottom: 60px;
+                }
+            }
+
+            .intersted_top_button  button{
+                margin: auto;
+                max-width: 40%;
+            }
+
+            .intersted_button{
+                width: 100%;           
                 display: flex;
-                flex-direction: column;            
-                list-style: none;                
+                flex-wrap: wrap;
+                padding: 15px 0 0 0;
 
-                & li{                
-                    display: flex;                            
-                    padding-bottom: 24px;
-                    align-items: flex-start;
-
-                    span{
-                        font-size: $font-size-p;
-                        font-family: $font-family-p;                                                
-                        padding-top: 5px;
+                .intersted_button_lu_primary{
+                    min-width: 50%; 
+                    padding-bottom: 2.5%; 
+                    
+                    li{
+                        padding-right: 10%;
                     }
-
-                    a{
-                        padding-left: 16px;
-                        font-size: $font-size-p;
-                        font-family: $font-family-p; 
-                        line-height: $line-heigt-p;
-                    }            
                 }
-                & li:nth-child(1){                
-                    display: flex;                           
-                    align-items: center;
-                    padding-bottom: 32px;
 
-                    h2{
-                        padding-left: 25px;
-                        font-size: 28px;
-                        font-family: "Gilroy";
-                        color: $font-color-default;
-                    }            
+                .intersted_button_lu_secondary{
+                    min-width: 50%;
+        
+                    lu{                
+                        padding: 0;            
+                    }
                 }
             }
+
         }
-
-        & .lu_secondary_intersted_button {        
-            width: 25%;
-            color: $font-color-default;
-
-            lu{
-                display: flex;
-                flex-direction: column;            
-                list-style: none;
-                padding-left: 35%;
-
-                & li{                
-                    display: flex;                            
-                    padding-bottom: 24px;                
-
-                    a{
-                        padding-left: 16px;
-                        font-size: $font-size-p;
-                        font-family: $font-family-p; 
-                        line-height: $line-heigt-p;
-                    }            
-                }
-                
-                & li:nth-child(1){                
-                    display: flex;                           
-                    align-items: center;
-                    padding-bottom: 32px;                    
-                    font-size: $font-size-h2;
-                    font-family: $font-family-title;
-                    color: $font-color-default;                
-                }
-            }
-        }   
-    }
-    
-    & .right_reserved{    
-        padding: 40px 0 64px 0;
-        font-size: $font-size-p;
-        font-family: $font-family-p;
-        color: $font-color-default;
-        opacity: 40%;
-    }
+        
+    }  
 }

@@ -8,13 +8,37 @@
     flex-direction: column;    
     margin: auto;    
     width: 1360px;
+
+    @include breakpoint(md) {         
+        width: 100%; 
+        margin: auto;               
+     }
+
+    
+
+
+   
+   
 }
+
+
 
 /****MAIN****/
 
 main{    
     flex-grow: 1;
     text-align: center;
-    width: 100%;
+    width: 100%;   
+
+    @include breakpoint(md) {    
+        margin: auto;       
+     }
+
+     @include breakpoint(xs) {                 
+        text-align: center;
+        width: 100%;
+        margin: auto;
+     }
+     
 }
 

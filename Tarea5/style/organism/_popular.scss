@@ -72,8 +72,14 @@
                 line-height: $line-heigt-p;       
                 text-align: left; 
             }
-        }        
+        }  
+        
+        &_image{
+            min-height: 100%;        
+        }
     }
+
+   
 
      /*****CARD SECONDARY*****/
      & .card_general_secondary{
@@ -136,5 +142,44 @@
         width: 100%;
         border: 1px solid grey;  
     }   
+
+    @include breakpoint(md) {         
+        padding-top: 20px;
+        width: 95%; 
+        
+        h2{
+            padding-top: 20px;           
+        }   
+
+            .card_primary{               
+                overflow: hidden;
+               
+                &_content {                   
+                    min-width: 40%;                    
+                }
+
+                & .card_primary_image img{                    
+                    background-size: 60%;
+                    min-height: 100%;
+                }
+            }
+        
+     }
+     @include breakpoint(xs) {                
+
+        .card_primary{
+            
+            display: flex;
+            flex-direction: column;            
+
+            &_content{
+                background: green;
+                width: 100%;
+            }
+            &_image{
+                                
+            }
+        }
+    }
     
 }

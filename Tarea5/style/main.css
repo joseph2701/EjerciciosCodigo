@@ -65,6 +65,12 @@
   margin: auto;
   width: 1360px;
 }
+@media (max-width: 880px) {
+  .wrapper {
+    width: 100%;
+    margin: auto;
+  }
+}
 
 /****MAIN****/
 main {
@@ -73,6 +79,18 @@ main {
           flex-grow: 1;
   text-align: center;
   width: 100%;
+}
+@media (max-width: 880px) {
+  main {
+    margin: auto;
+  }
+}
+@media (max-width: 585px) {
+  main {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
 }
 
 /****title****/
@@ -106,6 +124,16 @@ main {
   font-family: "Helvetica";
   line-height: 30px;
 }
+@media (max-width: 880px) {
+  .title {
+    background-size: auto;
+  }
+}
+@media (max-width: 585px) {
+  .title {
+    background-size: auto;
+  }
+}
 
 /****HEADER****/
 header {
@@ -116,10 +144,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 header div {
-  width: 100%;
-  padding-left: 95px;
+  padding-left: 30px;
 }
 header ul {
   display: -webkit-box;
@@ -137,6 +167,35 @@ header li {
   font-family: "Helvetica";
   color: #1F3F68;
   font-weight: bold;
+}
+@media (max-width: 880px) {
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header ul li:last-child {
+    padding-right: 70px;
+  }
+}
+@media (max-width: 585px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header ul {
+    background: yellow;
+  }
+  header ul li {
+    padding-left: 2%;
+  }
+  header ul li:last-child {
+    padding-right: 2px;
+  }
 }
 
 /*****POPULAR*****/
@@ -217,6 +276,9 @@ header li {
   line-height: 26px;
   text-align: left;
 }
+.popular .card_primary_image {
+  min-height: 100%;
+}
 .popular .card_general_secondary {
   width: 100%;
   display: -webkit-box;
@@ -277,6 +339,40 @@ header li {
 .popular hr {
   width: 100%;
   border: 1px solid grey;
+}
+@media (max-width: 880px) {
+  .popular {
+    padding-top: 20px;
+    width: 95%;
+  }
+  .popular h2 {
+    padding-top: 20px;
+  }
+  .popular .card_primary {
+    overflow: hidden;
+  }
+  .popular .card_primary_content {
+    min-width: 40%;
+  }
+  .popular .card_primary .card_primary_image img {
+    background-size: 60%;
+    min-height: 100%;
+  }
+}
+@media (max-width: 585px) {
+  .popular .card_primary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popular .card_primary_content {
+    background: green;
+    width: 100%;
+  }
 }
 
 /****ALL ARTICLE****/
@@ -372,13 +468,21 @@ header li {
   font-size: 16px;
   color: #356EAD;
 }
+@media (max-width: 880px) {
+  .all_article {
+    width: 95%;
+  }
+  .all_article .card_regular_content > p {
+    padding-right: 0px;
+    text-align: left;
+  }
+}
 
 /*****FOOTER*****/
 footer {
   background: #316099;
 }
-
-.intersted {
+footer .intersted {
   background: #316099;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,7 +494,7 @@ footer {
   width: 65%;
   margin: auto;
 }
-.intersted .intersted_top {
+footer .intersted .intersted_top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,7 +503,7 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.intersted .intersted_top .content_intersted_top {
+footer .intersted .intersted_top_content {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,7 +513,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.intersted .intersted_top .content_intersted_top h3 {
+footer .intersted .intersted_top_content h3 {
   font-size: 36px;
   font-family: "Helvetica";
   line-height: 46px;
@@ -418,7 +522,7 @@ footer {
   width: 70%;
   text-align: left;
 }
-.intersted .intersted_top .content_intersted_top p {
+footer .intersted .intersted_top_content p {
   padding-top: 32px;
   padding-bottom: 90px;
   -webkit-box-pack: left;
@@ -432,7 +536,7 @@ footer {
   text-align: left;
   width: 90%;
 }
-.intersted .intersted_top .button_intersted_top {
+footer .intersted .intersted_top_button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,7 +548,7 @@ footer {
           justify-content: right;
   width: 50%;
 }
-.intersted .intersted_top .button_intersted_top button {
+footer .intersted .intersted_top_button button {
   width: 220px;
   height: 56px;
   border: none;
@@ -453,11 +557,11 @@ footer {
   font-family: "Arial";
   font-size: 16px;
 }
-.intersted hr {
+footer .intersted hr {
   width: 100%;
   border: 1px solid white;
 }
-.intersted .intersted_button {
+footer .intersted .intersted_button {
   width: 100%;
   padding: 98px 0 64px 0;
   display: -webkit-box;
@@ -467,11 +571,11 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.intersted .intersted_button .lu_primary_intersted_button {
+footer .intersted .intersted_button_lu_primary {
   width: 30%;
   color: white;
 }
-.intersted .intersted_button .lu_primary_intersted_button lu {
+footer .intersted .intersted_button_lu_primary lu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,7 +585,7 @@ footer {
           flex-direction: column;
   list-style: none;
 }
-.intersted .intersted_button .lu_primary_intersted_button lu li {
+footer .intersted .intersted_button_lu_primary lu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,18 +594,18 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.intersted .intersted_button .lu_primary_intersted_button lu li span {
+footer .intersted .intersted_button_lu_primary lu li span {
   font-size: 16px;
   font-family: "Arial";
   padding-top: 5px;
 }
-.intersted .intersted_button .lu_primary_intersted_button lu li a {
+footer .intersted .intersted_button_lu_primary lu li a {
   padding-left: 16px;
   font-size: 16px;
   font-family: "Arial";
   line-height: 26px;
 }
-.intersted .intersted_button .lu_primary_intersted_button lu li:nth-child(1) {
+footer .intersted .intersted_button_lu_primary lu li:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,18 +613,19 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 32px;
+  font-weight: bold;
 }
-.intersted .intersted_button .lu_primary_intersted_button lu li:nth-child(1) h2 {
+footer .intersted .intersted_button_lu_primary lu li:nth-child(1) h2 {
   padding-left: 25px;
   font-size: 28px;
   font-family: "Gilroy";
   color: white;
 }
-.intersted .intersted_button .lu_secondary_intersted_button {
+footer .intersted .intersted_button_lu_secondary {
   width: 25%;
   color: white;
 }
-.intersted .intersted_button .lu_secondary_intersted_button lu {
+footer .intersted .intersted_button_lu_secondary lu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,19 +636,19 @@ footer {
   list-style: none;
   padding-left: 35%;
 }
-.intersted .intersted_button .lu_secondary_intersted_button lu li {
+footer .intersted .intersted_button_lu_secondary lu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 24px;
 }
-.intersted .intersted_button .lu_secondary_intersted_button lu li a {
+footer .intersted .intersted_button_lu_secondary lu li a {
   padding-left: 16px;
   font-size: 16px;
   font-family: "Arial";
   line-height: 26px;
 }
-.intersted .intersted_button .lu_secondary_intersted_button lu li:nth-child(1) {
+footer .intersted .intersted_button_lu_secondary lu li:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,11 +659,53 @@ footer {
   font-size: 20px;
   font-family: "Helvetica";
   color: white;
+  font-weight: bold;
 }
-.intersted .right_reserved {
+footer .intersted_right_reserved {
   padding: 40px 0 64px 0;
   font-size: 16px;
   font-family: "Arial";
   color: white;
   opacity: 40%;
+}
+@media (max-width: 880px) {
+  footer {
+    width: 100%;
+    margin: auto;
+  }
+  footer .intersted {
+    width: 78%;
+  }
+  footer .intersted .intersted_top_content h3 {
+    padding-top: 30px;
+  }
+  footer .intersted .intersted_top_content > p {
+    padding-bottom: 60px;
+  }
+  footer .intersted .intersted_top_button button {
+    margin: auto;
+    max-width: 40%;
+  }
+  footer .intersted .intersted_button {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 15px 0 0 0;
+  }
+  footer .intersted .intersted_button .intersted_button_lu_primary {
+    min-width: 50%;
+    padding-bottom: 2.5%;
+  }
+  footer .intersted .intersted_button .intersted_button_lu_primary li {
+    padding-right: 10%;
+  }
+  footer .intersted .intersted_button .intersted_button_lu_secondary {
+    min-width: 50%;
+  }
+  footer .intersted .intersted_button .intersted_button_lu_secondary lu {
+    padding: 0;
+  }
 }
