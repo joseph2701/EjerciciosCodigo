@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        html{
+            height:200vh;
+        }
+        body{
+            height:200vh;
+        }
+        input,select,option{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+   <input type="text"> 
+   <select name="" id="">
+        <option value="">Selecciona</option>   
+        <option value="1">1</option>
+       <option value="2">2</option>
+   </select>
+
+<script>
+    window.onresize=function(){
+        // console.log(this);
+        console.log("ancho",this.innerWidth);
+        console.log("alto",this.innerHeight);
+    }
+
+
+    window.onscroll=function(){
+        console.log('distancia',this.scrollY);
+    }
+
+    document.querySelector('body').onmousemove = function(event){
+        //  console.log('mousemove',event.clientX);
+        //  console.log('mousemove',event.clientY);
+        this.style.backgroundColor=`rgb(${event.clientX},${event.clientY},${event.clientX})`;
+    }
+
+// window.onload=function(){
+//     alert("ya cargo la pagina")
+// }
+
+const input=document.querySelector('input');
+
+input.oninput=function(e){
+    console.log(this.value);
+}
+
+input.onkeyup=function(e){
+    console.log('onkeyup: ',this.value);
+}
+
+input.onkeypress=function(e){
+    console.log('onkeypress: ',this.value);
+}
+
+const select = document.querySelector('select');
+select.onchange=function(e){
+    console.log(this.value);
+}
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
