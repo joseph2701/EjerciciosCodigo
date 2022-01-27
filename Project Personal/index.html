@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion</title>      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-datetimepicker.min.css">
+     
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 mb-4 text-center">INSCRIPCION ELA VIRTUAL</h1>
+        <form action="">
+            <div class="row mb-4">
+                <div class="col">
+                    <input class="js_name form-control p-2" type="text" placeholder="Nombre" required>
+                </div>
+                <div class="col">
+                    <input class="js_lastname form-control p-2" type="text" placeholder="Apellidos" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <input class="js_cellphone form-control p-2" type="number" placeholder="Celular" required>
+                </div>                 
+                <div class="col">
+                    <div class="input-group date" id="datetimepicker">
+                        <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                        <div class="input-group-addon input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-calendar p-2" ></i></span>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <input class="js_mail form-control p-2" type= "email" placeholder="E-mail" required>
+                </div> 
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <select class="js_country   form-select " aria-label="Default select example">                                                
+                        <option selected>	Pais	</option>
+                        <option value="	1">	AFGANISTAN	</option>
+                        <option value="	2">	ALBANIA	</option>
+                        <option value="	3">	ALEMANIA	</option>
+                        <option value="	4">	ANDORRA	</option>
+                        <option value="	5">	ANGOLA	</option>
+                        <option value="	6">	ANGUILLA	</option>
+                        <option value="	7">	ANTIGUA Y BARBUDA	</option>
+                        <option value="	8">	ANTILLAS HOLANDESAS	</option>
+                        <option value="	9">	ARABIA SAUDI	</option>
+                        <option value="	10">	ARGELIA	</option>
+                        <option value="	11">	ARGENTINA	</option>
+                        <option value="	12">	ARMENIA	</option>
+                        <option value="	13">	ARUBA	</option>
+                        <option value="	14">	AUSTRALIA	</option>
+                        <option value="	15">	AUSTRIA	</option>
+                        <option value="	16">	AZERBAIYAN	</option>
+                        <option value="	17">	BAHAMAS	</option>
+                        <option value="	18">	BAHREIN	</option>
+                        <option value="	19">	BANGLADESH	</option>
+                        <option value="	20">	BARBADOS	</option>
+                        <option value="	21">	BELARUS	</option>
+                        <option value="	22">	BELGICA	</option>
+                        <option value="	23">	BELICE	</option>
+                        <option value="	24">	BENIN	</option>
+                        <option value="	25">	BERMUDAS	</option>
+                        <option value="	26">	BHUTÁN	</option>
+                        <option value="	27">	BOLIVIA	</option>
+                        <option value="	28">	BOSNIA Y HERZEGOVINA	</option>
+                        <option value="	29">	BOTSWANA	</option>
+                        <option value="	30">	BRASIL	</option>
+                        <option value="	31">	BRUNEI	</option>
+                        <option value="	32">	BULGARIA	</option>
+                        <option value="	33">	BURKINA FASO	</option>
+                        <option value="	34">	BURUNDI	</option>
+                        <option value="	35">	CABO VERDE	</option>
+                        <option value="	36">	CAMBOYA	</option>
+                        <option value="	37">	CAMERUN	</option>
+                        <option value="	38">	CANADA	</option>
+                        <option value="	39">	CHAD	</option>
+                        <option value="	40">	CHILE	</option>
+                        <option value="	41">	CHINA	</option>
+                        <option value="	42">	CHIPRE	</option>
+                        <option value="	43">	COLOMBIA	</option>
+                        <option value="	44">	COMORES	</option>
+                        <option value="	45">	CONGO	</option>
+                        <option value="	46">	COREA	</option>
+                        <option value="	47">	COREA DEL NORTE 	</option>
+                        <option value="	48">	COSTA DE MARFIL	</option>
+                        <option value="	49">	COSTA RICA	</option>
+                        <option value="	50">	CROACIA	</option>
+                        <option value="	51">	CUBA	</option>
+                        <option value="	52">	DINAMARCA	</option>
+                        <option value="	53">	DJIBOUTI	</option>
+                        <option value="	54">	DOMINICA	</option>
+                        <option value="	55">	ECUADOR	</option>
+                        <option value="	56">	EGIPTO	</option>
+                        <option value="	57">	EL SALVADOR	</option>
+                        <option value="	58">	EMIRATOS ARABES UNIDOS	</option>
+                        <option value="	59">	ERITREA	</option>
+                        <option value="	60">	ESLOVENIA	</option>
+                        <option value="	61">	ESPAÑA	</option>
+                        <option value="	62">	ESTADOS UNIDOS DE AMERICA	</option>
+                        <option value="	63">	ESTONIA	</option>
+                        <option value="	64">	ETIOPIA	</option>
+                        <option value="	65">	FIJI	</option>
+                        <option value="	66">	FILIPINAS	</option>
+                        <option value="	67">	FINLANDIA	</option>
+                        <option value="	68">	FRANCIA	</option>
+                        <option value="	69">	GABON	</option>
+                        <option value="	70">	GAMBIA	</option>
+                        <option value="	71">	GEORGIA	</option>
+                        <option value="	72">	GHANA	</option>
+                        <option value="	73">	GIBRALTAR	</option>
+                        <option value="	74">	GRANADA	</option>
+                        <option value="	75">	GRECIA	</option>
+                        <option value="	76">	GROENLANDIA	</option>
+                        <option value="	77">	GUADALUPE	</option>
+                        <option value="	78">	GUAM	</option>
+                        <option value="	79">	GUATEMALA	</option>
+                        <option value="	80">	GUAYANA FRANCESA	</option>
+                        <option value="	81">	GUERNESEY	</option>
+                        <option value="	82">	GUINEA	</option>
+                        <option value="	83">	GUINEA ECUATORIAL	</option>
+                        <option value="	84">	GUINEA-BISSAU	</option>
+                        <option value="	85">	GUYANA	</option>
+                        <option value="	86">	HAITI	</option>
+                        <option value="	87">	HONDURAS	</option>
+                        <option value="	88">	HONG KONG	</option>
+                        <option value="	89">	HUNGRIA	</option>
+                        <option value="	90">	INDIA	</option>
+                        <option value="	91">	INDONESIA	</option>
+                        <option value="	92">	IRAN	</option>
+                        <option value="	93">	IRAQ	</option>
+                        <option value="	94">	IRLANDA	</option>
+                        <option value="	95">	ISLA DE MAN	</option>
+                        <option value="	96">	ISLA NORFOLK	</option>
+                        <option value="	97">	ISLANDIA	</option>
+                        <option value="	98">	ISLAS ALAND	</option>
+                        <option value="	99">	ISLAS CAIMÁN	</option>
+                        <option value="	100">	ISLAS COOK	</option>
+                        <option value="	101">	ISLAS DEL CANAL	</option>
+                        <option value="	102">	ISLAS FEROE	</option>
+                        <option value="	103">	ISLAS MALVINAS	</option>
+                        <option value="	104">	ISLAS MARIANAS DEL NORTE	</option>
+                        <option value="	105">	ISLAS MARSHALL	</option>
+                        <option value="	106">	ISLAS PITCAIRN	</option>
+                        <option value="	107">	ISLAS SALOMON	</option>
+                        <option value="	108">	ISLAS TURCAS Y CAICOS	</option>
+                        <option value="	109">	ISLAS VIRGENES BRITANICAS	</option>
+                        <option value="	110">	ISLAS VÍRGENES DE LOS ESTADOS UNIDOS	</option>
+                        <option value="	111">	ISRAEL	</option>
+                        <option value="	112">	ITALIA	</option>
+                        <option value="	113">	JAMAICA	</option>
+                        <option value="	114">	JAPON	</option>
+                        <option value="	115">	JERSEY	</option>
+                        <option value="	116">	JORDANIA	</option>
+                        <option value="	117">	KAZAJSTAN	</option>
+                        <option value="	118">	KENIA	</option>
+                        <option value="	119">	KIRGUISTAN	</option>
+                        <option value="	120">	KIRIBATI	</option>
+                        <option value="	121">	KUWAIT	</option>
+                        <option value="	122">	LAOS	</option>
+                        <option value="	123">	LESOTHO	</option>
+                        <option value="	124">	LETONIA	</option>
+                        <option value="	125">	LIBANO	</option>
+                        <option value="	126">	LIBERIA	</option>
+                        <option value="	127">	LIBIA	</option>
+                        <option value="	128">	LIECHTENSTEIN	</option>
+                        <option value="	129">	LITUANIA	</option>
+                        <option value="	130">	LUXEMBURGO	</option>
+                        <option value="	131">	MACAO	</option>
+                        <option value="	132">	MACEDONIA 	</option>
+                        <option value="	133">	MADAGASCAR	</option>
+                        <option value="	134">	MALASIA	</option>
+                        <option value="	135">	MALAWI	</option>
+                        <option value="	136">	MALDIVAS	</option>
+                        <option value="	137">	MALI	</option>
+                        <option value="	138">	MALTA	</option>
+                        <option value="	139">	MARRUECOS	</option>
+                        <option value="	140">	MARTINICA	</option>
+                        <option value="	141">	MAURICIO	</option>
+                        <option value="	142">	MAURITANIA	</option>
+                        <option value="	143">	MAYOTTE	</option>
+                        <option value="	144">	MEXICO	</option>
+                        <option value="	145">	MICRONESIA	</option>
+                        <option value="	146">	MOLDAVIA	</option>
+                        <option value="	147">	MONACO	</option>
+                        <option value="	148">	MONGOLIA	</option>
+                        <option value="	149">	MONTENEGRO	</option>
+                        <option value="	150">	MONTSERRAT	</option>
+                        <option value="	151">	MOZAMBIQUE	</option>
+                        <option value="	152">	MYANMAR	</option>
+                        <option value="	153">	NAMIBIA	</option>
+                        <option value="	154">	NAURU	</option>
+                        <option value="	155">	NEPAL	</option>
+                        <option value="	156">	NICARAGUA	</option>
+                        <option value="	157">	NIGER	</option>
+                        <option value="	158">	NIGERIA	</option>
+                        <option value="	159">	NIUE	</option>
+                        <option value="	160">	NORUEGA	</option>
+                        <option value="	161">	NUEVA CALEDONIA	</option>
+                        <option value="	162">	NUEVA ZELANDA	</option>
+                        <option value="	163">	OMAN	</option>
+                        <option value="	164">	OTROS PAISES	</option>
+                        <option value="	165">	PAISES BAJOS	</option>
+                        <option value="	166">	PAKISTAN	</option>
+                        <option value="	167">	PALAOS	</option>
+                        <option value="	168">	PALESTINA	</option>
+                        <option value="	169">	PANAMA	</option>
+                        <option value="	170">	PAPUA NUEVA GUINEA	</option>
+                        <option value="	171">	PARAGUAY	</option>
+                        <option value="	172">	PERU	</option>
+                        <option value="	173">	POLINESIA FRANCESA	</option>
+                        <option value="	174">	POLONIA	</option>
+                        <option value="	175">	PORTUGAL	</option>
+                        <option value="	176">	PUERTO RICO	</option>
+                        <option value="	177">	QATAR	</option>
+                        <option value="	178">	REINO UNIDO	</option>
+                        <option value="	179">	REP.DEMOCRATICA DEL CONGO	</option>
+                        <option value="	180">	REPUBLICA CENTROAFRICANA	</option>
+                        <option value="	181">	REPUBLICA CHECA	</option>
+                        <option value="	182">	REPUBLICA DOMINICANA	</option>
+                        <option value="	183">	REPUBLICA ESLOVACA	</option>
+                        <option value="	184">	REUNION	</option>
+                        <option value="	185">	RUANDA	</option>
+                        <option value="	186">	RUMANIA	</option>
+                        <option value="	187">	RUSIA	</option>
+                        <option value="	188">	SAHARA OCCIDENTAL	</option>
+                        <option value="	189">	SAMOA	</option>
+                        <option value="	190">	SAMOA AMERICANA	</option>
+                        <option value="	191">	SAN BARTOLOME	</option>
+                        <option value="	192">	SAN CRISTOBAL Y NIEVES	</option>
+                        <option value="	193">	SAN MARINO	</option>
+                        <option value="	194">	SAN MARTIN (PARTE FRANCESA)	</option>
+                        <option value="	195">	SAN PEDRO Y MIQUELON 	</option>
+                        <option value="	196">	SAN VICENTE Y LAS GRANADINAS	</option>
+                        <option value="	197">	SANTA HELENA	</option>
+                        <option value="	198">	SANTA LUCIA	</option>
+                        <option value="	199">	SANTA SEDE	</option>
+                        <option value="	200">	SANTO TOME Y PRINCIPE	</option>
+                        <option value="	201">	SENEGAL	</option>
+                        <option value="	202">	SERBIA	</option>
+                        <option value="	203">	SEYCHELLES	</option>
+                        <option value="	204">	SIERRA LEONA	</option>
+                        <option value="	205">	SINGAPUR	</option>
+                        <option value="	206">	SIRIA	</option>
+                        <option value="	207">	SOMALIA	</option>
+                        <option value="	208">	SRI LANKA	</option>
+                        <option value="	209">	SUDAFRICA	</option>
+                        <option value="	210">	SUDAN	</option>
+                        <option value="	211">	SUECIA	</option>
+                        <option value="	212">	SUIZA	</option>
+                        <option value="	213">	SURINAM	</option>
+                        <option value="	214">	SVALBARD Y JAN MAYEN	</option>
+                        <option value="	215">	SWAZILANDIA	</option>
+                        <option value="	216">	TADYIKISTAN	</option>
+                        <option value="	217">	TAILANDIA	</option>
+                        <option value="	218">	TANZANIA	</option>
+                        <option value="	219">	TIMOR ORIENTAL	</option>
+                        <option value="	220">	TOGO	</option>
+                        <option value="	221">	TOKELAU	</option>
+                        <option value="	222">	TONGA	</option>
+                        <option value="	223">	TRINIDAD Y TOBAGO	</option>
+                        <option value="	224">	TUNEZ	</option>
+                        <option value="	225">	TURKMENISTAN	</option>
+                        <option value="	226">	TURQUIA	</option>
+                        <option value="	227">	TUVALU	</option>
+                        <option value="	228">	UCRANIA	</option>
+                        <option value="	229">	UGANDA	</option>
+                        <option value="	230">	URUGUAY	</option>
+                        <option value="	231">	UZBEKISTAN	</option>
+                        <option value="	232">	VANUATU	</option>
+                        <option value="	233">	VENEZUELA	</option>
+                        <option value="	234">	VIETNAM	</option>
+                        <option value="	235">	WALLIS Y FORTUNA	</option>
+                        <option value="	236">	YEMEN	</option>
+                        <option value="	237">	ZAMBIA	</option>
+                        <option value="	238">	ZIMBABWE	</option>
+                    </select>
+                </div> 
+                <div class="col">
+                    <input class="js_department form-control p-2" type= "text" placeholder="Departamento" required>                    
+                </div> 
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col">
+                    <input class="js_province form-control p-2" type="text" placeholder="Provincia" required>
+                </div> 
+                <div class="col">
+                    <input class="js_distrit form-control p-2" type= "text" placeholder="Distrito" required>
+                </div> 
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <input class="js_address form-control  p-2" type="text" placeholder="Dirección" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <select class="js_church   form-select " aria-label="Default select example">                                                
+                        <option selected>Iglesia</option>
+                        <option value="1">Iacym - Año Nuevo</option>
+                        <option value="2">Iacym - Carabayllo</option>
+                        <option value="3">Iacym - Chillón</option>
+                        <option value="4">Iacym - Comas</option>
+                        <option value="5">Iacym - El progreso</option>
+                        <option value="6">Iacym - El Retablo</option>
+                        <option value="7">Iacym - Independencia</option>
+                        <option value="8">Iacym - Otras</option>
+                        <option value="9">Otra Denominación</option>                       
+                    </select>
+                </div> 
+                <div class="col">
+                    <select class="js_minister   form-select " aria-label="Default select example">
+                        <option selected>Red o Ministerio</option>
+                        <option value="1">Adoración, artes y comunicación</option>
+                        <option value="2">Anfitriones</option>
+                        <option value="3">Ela / Ete</option>
+                        <option value="4">Gac</option>
+                        <option value="5">Misiones</option>
+                        <option value="6">Red de Jóvenes</option>
+                        <option value="7">Red de Matrimonios</option>
+                        <option value="8">Red de Mujeres</option>
+                        <option value="9">Red de Niños</option>
+                        <option value="10">Red de Oro/option>
+                        <option value="11">Red de Varones</option>
+                        <option value="12">Zona 1 y 2</option>
+                        <option value="13">Zona 3</option>
+                        <option value="14">Zona 4</option><option value="1">Zona </option>
+                        <option value="15">Zona 5</option>
+                        <option value="16">Zona 9</option>
+                        <option value="17">Zona 10</option>
+                        <option value="18">Otros</option>
+                    </select>
+                </div>  
+                <div class="col">
+                    <select class="js_baptized   form-select " aria-label="Default select example">
+                        <option selected>¿Bautizado?</option>
+                        <option value="1">Si soy Bautizado</option>
+                        <option value="2">No soy Bautizado</option>
+                        <option value="3">Bautismo pendiente</option>                    
+                    </select>                    
+                </div> 
+            </div>    
+            <div class="js_step_1 row mb-4 ">
+                <div class="col-12 mb-4 ">
+                    <select class="js_step_1_a   form-select " aria-label="Default select example">
+                        <option selected>Cursos Introducción</option>
+                        <option value="1">Verdades Básicas - [Lunes y Viernes: 8:00 - 9:30pm]</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <select class="js_step_1_b   form-select" aria-label="Default select example">
+                        <option selected>Cursos Libres</option>
+                        <option value="1">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                      </select>
+                </div>
+            </div>
+            <div class="js_step_2_1 row mb-4">
+                <div class="col-12 mb-4">
+                    <select class="js_step_2_a   form-select" aria-label="Default select example">
+                        <option selected>Cursos - Lunes</option>
+                        <option value="1">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                        <option value="2">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                      </select>
+                </div>                
+                <div class="col-12 mb-4">
+                    <select class="js_step_2_b   form-select" aria-label="Default select example">
+                        <option selected>Cursos - Martes</option>
+                        <option value="1">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                        <option value="2">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                      </select>
+                </div>  
+                <div class="col-12 mb-4">
+                    <select class="js_step_2_c   form-select" aria-label="Default select example">
+                        <option selected>Cursos - Miercoles</option>
+                        <option value="1">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                        <option value="2">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                      </select>
+                </div>  
+                <div class="col-12 mb-4">
+                    <select class="js_step_2_d   form-select" aria-label="Default select example">
+                        <option selected>Cursos - Jueves</option>
+                        <option value="1">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                        <option value="2">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                    </select>
+                </div>  
+                <div class="col-12 mb-4">                   
+                    <select class="js_step_2_e   form-select" aria-label="Default select example">
+                        <option selected>Cursos - Viernes</option>
+                        <option value="1">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                        <option value="2">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                    </select>                
+                </div>  
+                <div class="col-12">
+                    <select class="js_step_2_f   form-select" aria-label="Default select example">
+                        <option selected>Cursos - Sabados</option>
+                        <option value="1">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                        <option value="2">Familia Saludable - [Martes: 8:00 - 9:30pm]</option>
+                    </select>
+                </div>  
+            </div>                     
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <button type="submit" class="btn btn-primary col-4 p-2">CREAR</button>                   
+                </div>
+            </div>
+        </form>  
+        <div class="js-cards row row-cols-1 row-cols-md-3 g-4">
+           
+        </div>
+        
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+    <script src="bootstrap-datetimepicker.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script>
+        $(function () {
+                $('#datetimepicker').datetimepicker({
+                  format: 'DD/MM/YYYY',
+                  ignoreReadonly: true
+                });
+            });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker').datetimepicker();
+        });
+    </script>
+</body>
+</html>
